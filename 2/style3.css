@@ -1,0 +1,99 @@
+.grid {
+    display: grid;
+    grid-template-columns:repeat(5, 150px);
+    grid-template-rows:repeat(5, 50px);
+} 
+
+.grid > * {
+    background-color: aliceblue;
+    padding: 7px;
+    margin: 1px;
+    text-align: center;
+    position: relative;
+    border: 3px solid skyblue;
+}
+
+.first{
+	width: 432px;
+	height: 33px;
+	grid-column-start: span 3;
+}
+
+
+
+.two{
+	width: 282px;
+	height: 33px;
+	grid-column-start: span 2;
+}
+
+.three{
+	width: 132px;
+	height: 133px;
+	grid-row-start: span 3;
+}
+
+.four{
+	width: 132px;
+	height: 33px;
+}
+
+
+
+.five{
+	width: 132px;
+	height: 33px;
+}
+
+.six{
+	width: 132px;
+	height: 83px;
+	grid-row-start: span 2;
+}
+
+.seven{
+	width: 132px;
+	height: 33px;
+}
+
+.eight{
+	width: 132px;
+	height: 133px;
+	grid-row-start: span 3;
+}
+
+.nine{
+	width: 132px;
+	height: 33px;
+}
+
+.ten{
+	width: 132px;
+	height: 33px;
+}
+
+.eleven{
+	width: 132px;
+	height: 83px;
+	grid-row-start: span 2;
+}
+
+.twelve{
+	width: 132px;
+	height: 33px;
+}
+
+.thirteen{
+	width: 132px;
+	height: 33px;
+}
+
+.fourteen{
+	width: 132px;
+	height: 33px;
+}
+
+.fifteen{
+	width: 282px;
+	height: 33px;
+}

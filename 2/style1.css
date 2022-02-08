@@ -1,0 +1,23 @@
+.text{
+color:red;
+font-size: 20px;
+}
+
+@media(max-width:480px){
+	
+	.text{
+		color:blue;
+		font-size: 10px;
+	}
+
+}
+
+
+@media(min-width:800px){
+	
+	.text{
+		color:green;
+		font-size: 40px;
+	}
+
+}

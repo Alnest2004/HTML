@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>transform skew</title>
+
+<style>
+	main{
+		text-align:center;
+		width:640px;
+		margin: 0 auto;
+	}
+	
+	p{
+		font-size: 18px;
+		background: #349db;
+		padding: 5px 10px;
+		color: white;
+		transform: skew(30deg);
+	}
+	p > span {
+		display: block;
+		transform: skew(-30deg);
+	}
+	
+	.tovar{
+		transition: all 0.7s;
+		transform: scale(0.8);
+	}
+	
+	.tovar:hover{
+		transform: scale(1);
+	}
+</style>
+
+</head>
+<body>
+	<main>
+		<p>
+			<span>Акция 1+1! Покупая один товар,
+			второй получаете в подарок!</span>
+		</p>
+		<div>
+			<img class=tovar src=img/tovar1.jpg>
+			<img class=tovar src=img/tovar2.jpg>
+			<img class=tovar src=img/tovar3.jpg>
+		</div>
+	
+	</main>
+
+	
+
+</body>
+</html>

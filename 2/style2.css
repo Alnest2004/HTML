@@ -1,0 +1,42 @@
+.grid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 50px 50px 50px;
+
+} 
+
+.grid > * {
+    background-color: aliceblue;
+    padding: 7px;
+    margin: 1px;
+    text-align: center;
+    position: relative;
+    border: 3px solid skyblue;
+}
+
+.first{
+	width: 284px;
+	height: 33px;
+}
+
+.two{
+	margin-left: 151px;
+	width: 142px;
+	height: 84px;
+}
+
+.three{
+	width: 132px;
+	height: 33px;
+}
+
+.four{
+	width: 132px;
+	height: 33px;
+}
+
+
+
+.five{
+	width: 442px;
+}

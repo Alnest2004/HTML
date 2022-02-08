@@ -1,0 +1,68 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+p{
+	margin: 5px 5px 5px 5px;
+	text-indent: 20px;
+}
+
+
+
+.header{
+	/* background: linear-gradient(to right, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 100%) 40%, rgb(255 255 255) 100%), url(header.jpg) no-repeat; */
+	background-image: url(header.jpg);
+	background-position: 0% 70%;
+	height: 80px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.ozero{
+	margin-left: 210px;
+	padding-top: 30px;
+} 
+
+.photo{
+	float: right;
+	flex-wrap: wrap;
+	height: 1100px;
+	margin-left: 10px;
+}
+
+
+
+ 
+.pogoda {
+    float: left;
+    width: 140px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+.content {
+	margin-left: 355px;
+	margin-right: 220px;
+    float: center;
+    text-align: center;
+    height: 830px;
+    font-size: 20px;
+}
+ 
+ 
+em {
+	height: 40px;
+	float: right;
+	margin-right: 10px;
+}
+
+.footer {
+    background: #CCCCCC;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    clear: both;
+}

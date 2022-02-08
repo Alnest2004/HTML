@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        .container {
+            display: inline-block;
+            width: 1200px;
+            height: 500px;
+            font-family:sans-serif;
+            position: relative;
+            background-color: skyblue;
+            
+            
+            background-size: cover;
+            position: relative;
+        }
+        .container-bg {
+            background: url("media.jpg");
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation: container-bg;
+            animation-duration: 10s;
+            animation-iteration-count:1;
+            animation-delay: 6s;
+            animation-fill-mode: forwards;
+            
+        }
+        .btn {
+            display: inline-block;
+            outline: none;
+            color: #fff;
+            padding: 14px 18px;
+            border: 1px solid;
+            font-size: 18px;
+            z-index: 1;
+            background: #8aa1af;
+            left: 600px;
+            position: relative;
+            top: 55%;
+            overflow: visible;
+            cursor: pointer;
+            text-align: center;
+            opacity: 0;
+            animation: btn;
+            animation-duration: 6s;
+            animation-iteration-count:infinite;
+            animation-delay: 7s;
+            animation-fill-mode: forwards;
+            transition: background-color 1s linear;
+        }
+
+        .btn:hover {
+            background-color: orangered;
+            width: 150px;
+            height: 51px;
+
+
+        }
+        h1 {
+            color: wheat;
+            font-size: 44px;
+            text-shadow: 1px 1px 7px #444;
+            text-transform: uppercase;
+            position: absolute;
+            left: 600px;
+            top: 18%;
+            animation: slideLeft;
+            animation-duration: 10s;
+            animation-iteration-count:infinite;
+
+        }
+        p {
+            color: white;
+            font-size: 24px;
+            width: 490px;
+            text-shadow: 1px 1px 7px #444;
+            left: 2000px;
+            top: 30%;
+            position: absolute;
+            animation: slideRight;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+        }
+
+
+
+
+        @keyframes slideLeft {
+            from{left: -400px; opacity: 0}
+            40%{opacity: 1}
+            70%{opacity: 1}
+            to{left: 600px; opacity: 0}
+        }
+        @keyframes slideRight {
+            from{left: 2000px; opacity: 0;}
+            40%{opacity: 1}
+            70%{opacity: 1}
+            to{left: 600px; opacity: 0}
+        }
+        @keyframes container-bg {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes btn {
+            from{opacity: 0}
+            40%{opacity: 1}
+            70%{opacity: 1}
+            to{opacity: 0}
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="container-bg"></div>
+    <h1 class="slideLeft">Медийная реклама</h1>
+    <p class="slideRight">один из наиболее эффективных методов по
+    увеличению продаж, созданию и поддержанию
+    имиджа компании</p>
+    <button class="btn">Попробовать</button>
+</div>
+
+</body>
+</html>
